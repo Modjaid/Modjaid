@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bogdan Rashevskiy — .NET Developer Resume</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 10.5pt;
+    color: #1a1a2e;
+    background: #fff;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 12mm 16mm 12mm 16mm;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2563eb;
+    margin-bottom: 16px;
+  }
+  .header-left h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    letter-spacing: -0.5px;
+  }
+  .header-left .title {
+    font-size: 13pt;
+    font-weight: 500;
+    color: #2563eb;
+    margin-top: 2px;
+  }
+  .header-left .location {
+    font-size: 9.5pt;
+    color: #64748b;
+    margin-top: 4px;
+  }
+  .header-right {
+    text-align: right;
+    font-size: 9pt;
+    color: #374151;
+    line-height: 1.8;
+  }
+  .header-right a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  /* ── SECTIONS ── */
+  .section { margin-bottom: 14px; }
+  .section-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1e3a8a;
+    border-bottom: 1.5px solid #bfdbfe;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+  }
+
+  /* ── SUMMARY ── */
+  .summary p { color: #374151; }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 24px;
+  }
+  .skill-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9.5pt;
+    color: #374151;
+  }
+  .skill-item::before {
+    content: '▸';
+    color: #2563eb;
+    font-size: 8pt;
+    flex-shrink: 0;
+  }
+
+  /* ── EXPERIENCE ── */
+  .job { margin-bottom: 12px; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .job-title {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  .job-period {
+    font-size: 9pt;
+    color: #64748b;
+    white-space: nowrap;
+  }
+  .job-company {
+    font-size: 9.5pt;
+    font-weight: 500;
+    color: #2563eb;
+    margin-bottom: 4px;
+  }
+  .job-location {
+    font-size: 9pt;
+    color: #94a3b8;
+  }
+  .job ul {
+    margin-top: 4px;
+    padding-left: 14px;
+    list-style: none;
+  }
+  .job ul li {
+    position: relative;
+    padding-left: 10px;
+    font-size: 9.5pt;
+    color: #374151;
+    margin-bottom: 2px;
+  }
+  .job ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+  }
+
+  /* ── PROJECTS ── */
+  .project { margin-bottom: 8px; }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .project-name {
+    font-weight: 600;
+    color: #1e3a8a;
+    font-size: 10pt;
+  }
+  .project-link {
+    font-size: 8.5pt;
+    color: #2563eb;
+    text-decoration: none;
+  }
+  .project-desc {
+    font-size: 9.5pt;
+    color: #374151;
+    margin-top: 2px;
+  }
+
+  /* ── EDUCATION & CERTS ── */
+  .edu-item, .cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 9.5pt;
+    margin-bottom: 3px;
+  }
+  .edu-name { font-weight: 600; color: #1a1a2e; }
+  .edu-sub { color: #374151; font-size: 9pt; }
+  .edu-date { color: #64748b; font-size: 9pt; white-space: nowrap; }
+  .cert-item span { color: #374151; }
+  .cert-item .cert-issuer { color: #64748b; font-size: 9pt; }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 14px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 8pt;
+    color: #94a3b8;
+    text-align: center;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { padding: 10mm 14mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Bogdan Rashevskiy</h1>
+      <div class="title">.NET Developer &amp; Backend Engineer</div>
+      <div class="location">📍 Sacramento, California, United States</div>
+    </div>
+    <div class="header-right">
+      <a href="mailto:HodjaModjuja@Gmail.com">✉ hodjamodjuja@gmail.com</a><br>
+      <a href="https://www.linkedin.com/in/modjaid">linkedin.com/in/modjaid</a><br>
+      <a href="https://github.com/Modjaid">github.com/Modjaid</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Backend developer with <strong>5+ years of experience</strong> in .NET and microservices architecture.
+      Proven track record in building high-load systems, SQL database design, and REST/GraphQL API integration.
+      Deep understanding of algorithms, design patterns, and performance optimization.
+      Additionally experienced in Unity 3D game development — published titles on Play Market, launched a Kickstarter campaign, and led cross-functional teams.
+      Seeking to join an enterprise team to apply and grow backend engineering expertise.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Key Skills</div>
+    <div class="skills-grid">
+      <div class="skill-item">.NET (C#, ASP.NET Core, Entity Framework)</div>
+      <div class="skill-item">Microservices Architecture</div>
+      <div class="skill-item">SQL (Microsoft SQL Server, PostgreSQL)</div>
+      <div class="skill-item">API Integration (REST, GraphQL)</div>
+      <div class="skill-item">Backend Development &amp; System Design</div>
+      <div class="skill-item">Performance Optimization &amp; Algorithms</div>
+      <div class="skill-item">Unity 3D (Addressables, Multiplayer, UI)</div>
+      <div class="skill-item">AWS S3 / Cloud Asset Delivery</div>
+      <div class="skill-item">Scrum / Agile</div>
+      <div class="skill-item">Git / GitHub</div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Work Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">AI Trainer</div>
+        <div class="job-period">Feb 2023 — Present · 2 yrs 8 mo</div>
+      </div>
+      <div class="job-company">DataAnnotation <span class="job-location">· California, USA (Remote)</span></div>
+      <ul>
+        <li>Training AI models to write correct, idiomatic Python code following documentation and specifications.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Unity Developer</div>
+        <div class="job-period">Jun 2021 — May 2022 · 1 yr</div>
+      </div>
+      <div class="job-company">SITRONICS <span class="job-location">· Saint Petersburg, Russia</span></div>
+      <ul>
+        <li>Developed interactive game scenes and mechanical cabin simulation for the Moscow Space Museum.</li>
+        <li>Optimized multiplayer mechanics using Photon, Ragdoll, Locomotion, Cutscene, AssetBundle, and ECS in Unity.</li>
+        <li>Built microservices and APIs for game data management systems (CRUD, PostgreSQL, GraphQL, Entity Framework, .NET).</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Unity Developer</div>
+        <div class="job-period">Feb 2020 — Feb 2021 · 1 yr 1 mo</div>
+      </div>
+      <div class="job-company">Delta Vision Games <span class="job-location">· Saint Petersburg, Russia</span></div>
+      <ul>
+        <li>Led game design decisions, developed UI and core gameplay mechanics in Unity.</li>
+        <li>Integrated monetization and analytics SDKs; deployed projects to Google Play Store.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Unity 3D Developer</div>
+        <div class="job-period">Oct 2019 — Feb 2020 · 5 mo</div>
+      </div>
+      <div class="job-company">Allemo Games <span class="job-location">· Saint Petersburg, Russia</span></div>
+      <ul>
+        <li>Game design, UI, core mechanics development; integrated SDKs; deployed to Play Store.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">SMT Process Engineer</div>
+        <div class="job-period">Sep 2015 — Jul 2019 · 3 yrs 11 mo</div>
+      </div>
+      <div class="job-company">AO "Zaslon" Scientific and Technical Enterprises <span class="job-location">· Saint Petersburg, Russia</span></div>
+      <ul>
+        <li>Developed .NET-based CAD data converters for PCB file transformation.</li>
+        <li>Daily maintenance and monitoring of automated SMT production lines.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Personal Projects</div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">AIMyrtana</div>
+        <a class="project-link" href="https://github.com/Modjaid/AIMyrtana" target="_blank">github.com/Modjaid/AIMyrtana</a>
+      </div>
+      <div class="project-desc">Auto-deploy platform for AI agents and websites. Built with .NET, AI integrations, and DevOps tooling.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">CyberCluck — Indie Infinite Runner</div>
+        <a class="project-link" href="https://www.kickstarter.com/projects/2115012025/cybercluck-infinite-runner-endless-exploration" target="_blank">kickstarter.com/projects/2115012025/cybercluck</a>
+      </div>
+      <div class="project-desc">
+        Published Unity 3D game on Play Market. Organized a team of artists and junior developers.
+        Deployed S3 AWS servers for remote asset delivery, configured Addressables for dynamic content loading.
+        Launched a successful Kickstarter campaign.
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-header">
+        <div class="project-name">Dev Showcase Playlist</div>
+        <a class="project-link" href="https://www.youtube.com/playlist?list=PLLX4vcb6HGRvlc5eDOX56yYNU6u0-y7kf" target="_blank">youtube.com/playlist?list=PLLX4vcb6HGRvlc5eDOX56yYNU6u0-y7kf</a>
+      </div>
+      <div class="project-desc">Video portfolio of personal development projects.</div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div>
+        <div class="edu-name">Saint Petersburg State University of Telecommunications (Bonch-Bruevich)</div>
+        <div class="edu-sub">Bachelor's Degree · Information Technology and Communication Systems</div>
+      </div>
+      <div class="edu-date">2016 — 2020</div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <div class="cert-item">
+      <span>🎓 <strong>Django Web Framework</strong></span>
+      <span class="cert-issuer">Meta / Coursera</span>
+    </div>
+    <div class="cert-item">
+      <span>🔐 <strong>Foundations of Cybersecurity</strong></span>
+      <span class="cert-issuer">Google</span>
+    </div>
+    <div class="cert-item">
+      <span>🐧 <strong>Hands-on Introduction to Linux Commands and Shell Scripting</strong></span>
+      <span class="cert-issuer">IBM</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    Bogdan Rashevskiy · hodjamodjuja@gmail.com · github.com/Modjaid · linkedin.com/in/modjaid
+  </div>
+
+</div>
+</body>
+</html>

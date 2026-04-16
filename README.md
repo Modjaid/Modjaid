@@ -19,7 +19,7 @@
 
 ## 🧑‍💻 About Me
 
-Backend developer with **4+ years of experience** in .NET and microservices architecture. I build high-load systems, design SQL databases, and integrate REST/GraphQL APIs. Deep understanding of algorithms, design patterns, and performance optimization.
+Backend developer with **5+ years of experience** in .NET and microservices architecture. I build high-load systems, design SQL databases, and integrate REST/GraphQL APIs. Deep understanding of algorithms, design patterns, and performance optimization.
 
 Also an experienced Unity 3D developer — published games on Play Market, launched a Kickstarter campaign, and led cross-functional teams.
 
