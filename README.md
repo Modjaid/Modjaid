@@ -4,7 +4,7 @@
 
 ### .NET Developer · Backend Engineer · Game Developer
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=.NET+%7C+C%23+%7C+ASP.NET+Core;Microservices+%26+Clean+Architecture;4%2B+years+of+backend+experience)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=.NET+%7C+C%23+%7C+ASP.NET+Core;Microservices+%26+Clean+Architecture;5%2B+years+of+backend+experience)](https://git.io/typing-svg)
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hodjamodjuja@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/modjaid)
